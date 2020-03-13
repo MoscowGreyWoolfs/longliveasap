@@ -24,7 +24,13 @@ namespace WebApplication1
             services.AddControllersWithViews();
             //
             // In production, the React files will be served from this directory
-            services.AddSpaStaticFiles(configuration =>
+
+ //           ____ ____  ____ __      __ __  __ __    ____
+            //(___)(_ \(___)(  ) / __\    (  \/  ) / __\  (_  _)
+            //)__)  )   / )__)  )(__ / (__)\    )    (  / (__)\  _)(_
+            //(__)(_)\_)(____)(____)(__)(__)(_ /\/\_)(__)(__)(____)
+
+          services.AddSpaStaticFiles(configuration =>
             {
                 configuration.RootPath = "ClientApp/build";
             });
