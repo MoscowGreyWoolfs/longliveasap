@@ -14,5 +14,13 @@ ReactDOM.render(
   </BrowserRouter>,
   rootElement);
 
+
+
+//ReactDOM.render(
+//    <CommentBox url="/comments" />,
+//    document.getElementById('content')
+//);
+
+
 registerServiceWorker();
 
