@@ -1,5 +1,11 @@
 import React, { Component } from 'react';
 
+
+//class s extends Component {
+//    const
+
+//}
+
 export class Counter extends Component {
   static displayName = Counter.name;
 
@@ -15,6 +21,11 @@ export class Counter extends Component {
     });
   }
 
+
+    //////componentDidMount() {
+    //////    this.populateWeatherData();
+    //////}
+
   render() {
     return (
       <div>
@@ -29,5 +40,15 @@ export class Counter extends Component {
         <button className="btn btn-primary" onClick={this.incrementCounter}>Increment</button>
       </div>
     );
-  }
+    }
+
+
+
+    //async populateWeatherData() {
+    //    const response = await fetch('weatherforecast');
+    //    const data = await response.json();
+    //    this.setState({ forecasts: data, loading: false });
+    //}
+
+
 }
