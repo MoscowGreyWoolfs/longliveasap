@@ -50,45 +50,46 @@ namespace WebApplication1.Controllers
         }
 
         [HttpGet]
-  
-        public List<Model1> Test()
+        [Route("test1")]
+        public IEnumerable<WeatherForecast> Get()
         {
-
-            Model1 model1 = new Model1();
-            model1.id = 5;
-            model1.age = 44;
-
-
-            var model2 = new Model1() { id = 5 };
-
-
-            var list1 = new List<Model1>() { model1, model2, new Model1() {id =5, gender="male" } };
-
-
-            var list1short = list1.Select(x => new  { idr = x.id , ggg= x.age}).ToList();
+            var rng = new Random();
+            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
+            {
+                Date = DateTime.Now.AddDays(index),
+                TemperatureC = rng.Next(-20, 55),
+                Summary = Summaries[rng.Next(Summaries.Length)]
+            })
+            .ToArray();
+        }
 
             var age = list1short[0].idr;
 
 
-            //   return list1;
+        [HttpGet]
+        [Route("test2")]
+        public IEnumerable<Model1> Test()
+        {
 
             //return new List<Model1>() { model1, model2, new Model1() { id = 5, gender = "male" } };
 
             var rng = new Random();
-           
-
-            return Enumerable.Range(1, 40).Select(index => new Model1
+          
+            return Enumerable.Range(1, 5).Select(index => new Model1
             {
-                id = index,
-                name = Names[rng.Next(Names.Length)],
-                gender = Gender[rng.Next(Gender.Length)],
-                age = (int)SampleGaussian(rng, 33, 3),
-                posts = (int)SampleGaussian(rng, 20, 6),
-                comments = (int)SampleGaussian(rng, 100, 30)
+           
+                id = rng.Next(-20, 55),
+                name = Names[rng.Next(Names.Length)]
             })
            .ToList();
 
-
+            //return Enumerable.Range(1, 5).Select(index => new WeatherForecast
+            //{
+            //    Date = DateTime.Now.AddDays(index),
+            //    TemperatureC = rng.Next(-20, 55),
+            //    Summary = Summaries[rng.Next(Summaries.Length)]
+            //})
+            //.ToArray();
 
         }
 
