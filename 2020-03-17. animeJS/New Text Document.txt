@@ -1,0 +1,77 @@
+<div id="anime-demo" >
+
+  <svg width="600" height="450">
+    <polygon points="143 31 21 196 286 223" fill="#ED6E46" />
+    <path d="M381.68 194.14L228.96 194.14L228.96 291.95L381.68 291.95L381.68 194.14Z" id="f18jlMIIHE">
+  </svg>
+  <p id="demo" onmousemove="myFunction()">te</p>
+</div>
+
+
+/*var morphing = anime({
+  targets: 'polygon',
+  points: [
+    { value: '143 31 21 196 286 223' },
+    { value: '243 31 21 196 286 223' },
+     { value: '443 31 21 196 286 223' },
+  ],
+  easing: 'linear',
+  duration: 1000,
+  direction: 'alternate',
+  loop: true
+});*/
+
+
+var morphing2 = anime({
+  targets: 'path',
+  d: [
+    { value: 'M381.68 194.14L228.96 194.14L228.96 291.95L381.68 291.95L381.68 194.14Z' },
+    { value: 'M394.01 224.16L251.07 170.39L216.63 261.93L359.57 315.7L394.01 224.16Z' },
+  ],
+  easing: 'linear',
+  duration: 1000,
+  direction: 'alternate',
+  loop: true
+});
+
+
+body {
+  margin: 20px;
+  font-family: 'Lato';
+  font-weight: 300;
+  font-size: 1.2em;
+}
+
+#anime-demo {
+  position: relative;
+}
+
+
+
+document.getElementById("anime-demo").onmousemove = function(event) {myFunction(event)};
+
+
+function myFunction(e) {
+  var x = e.clientX;
+ var y = e.clientY;
+  
+   var str1 = "143 ";
+  var str2 = ' 21 196 286 223';
+  var res = str1.concat(y.toString(), str2);
+  
+var morphing = anime({
+  targets: 'polygon',
+  points: [
+ //   { value: '143' +y.toString()+ ' 21 196 286 223' },
+    { value:res}
+  ],
+  easing: 'linear',
+//  duration: 300,
+//  direction: 'alternate',
+ // loop: true
+})
+  
+  
+  var coor = "Coordinates: (" + x + "," + y + ")";
+  document.getElementById("demo").innerHTML = coor;
+}

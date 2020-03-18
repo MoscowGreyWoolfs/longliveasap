@@ -24,6 +24,7 @@ namespace WebApplication1.Controllers
         {
             "male" , "female"
         };
+       
         public static double SampleGaussian(Random random, double mean, double stddev)
         {
             // The method requires sampling from a uniform random of (0,1]
@@ -49,33 +50,19 @@ namespace WebApplication1.Controllers
             _logger = logger;
         }
 
+        
+
+
+
         [HttpGet]
-  
-        public List<Model1> Test()
+        //[Route("test2")]
+        public IEnumerable<Model1> Test()
         {
-
-            Model1 model1 = new Model1();
-            model1.id = 5;
-            model1.age = 44;
-
-
-            var model2 = new Model1() { id = 5 };
-
-
-            var list1 = new List<Model1>() { model1, model2, new Model1() {id =5, gender="male" } };
-
-
-            var list1short = list1.Select(x => new  { idr = x.id , ggg= x.age}).ToList();
-
-            var age = list1short[0].idr;
-
-
-            //   return list1;
 
             //return new List<Model1>() { model1, model2, new Model1() { id = 5, gender = "male" } };
 
             var rng = new Random();
-           
+
 
             return Enumerable.Range(1, 40).Select(index => new Model1
             {
@@ -87,7 +74,6 @@ namespace WebApplication1.Controllers
                 comments = (int)SampleGaussian(rng, 100, 30)
             })
            .ToList();
-
 
 
         }

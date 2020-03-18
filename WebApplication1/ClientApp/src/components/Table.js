@@ -1,5 +1,5 @@
-
 import React, { Component } from 'react';
+
 
 export class DataTable extends Component {
     static displayName = DataTable.name;
@@ -7,14 +7,17 @@ export class DataTable extends Component {
     constructor(props) {
         super(props);
         this.state = { forecasts: [], loading: true };
+        
     }
+
+   
 
     componentDidMount() {
         this.DataTable();
     }
 
     static renderDataTable(forecasts) {
-        return (
+        return (           
             <table className='table table-striped' aria-labelledby="tabelLabel">
                 <thead>
                     <tr>
@@ -38,7 +41,8 @@ export class DataTable extends Component {
                         </tr>
                     )}
                 </tbody>
-            </table>
+                </table>
+            
         );
     }
 

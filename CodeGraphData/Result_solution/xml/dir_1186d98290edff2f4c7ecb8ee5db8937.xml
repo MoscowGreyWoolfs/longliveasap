@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_1186d98290edff2f4c7ecb8ee5db8937" kind="dir">
+    <compoundname>C:/Users/Ilya Petrov/source/repos/WebApplication1/ConsoleApp1</compoundname>
+    <innerfile refid="_account_8cs">Account.cs</innerfile>
+    <innerfile refid="_facebook_client_8cs">FacebookClient.cs</innerfile>
+    <innerfile refid="_facebook_service_8cs">FacebookService.cs</innerfile>
+    <innerfile refid="_facebook_settings_8cs">FacebookSettings.cs</innerfile>
+    <innerfile refid="_console_app1_2_program_8cs">Program.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Ilya Petrov/source/repos/WebApplication1/ConsoleApp1/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_d488d48b1b0e67e2e32608e9a9af3f0f" kind="dir">
+    <compoundname>C:/Users/Ilya Petrov/source/repos/WebApplication1/WebApplication1</compoundname>
+    <innerdir refid="dir_5ee1323723dc61b846f5427a8b435b2a">C:/Users/Ilya Petrov/source/repos/WebApplication1/WebApplication1/Controllers</innerdir>
+    <innerdir refid="dir_5667f5cafacf0a20891f19e1fb9874ec">C:/Users/Ilya Petrov/source/repos/WebApplication1/WebApplication1/Models</innerdir>
+    <innerdir refid="dir_1b977cbe22b27acc4e609c363ef5b1b1">C:/Users/Ilya Petrov/source/repos/WebApplication1/WebApplication1/Pages</innerdir>
+    <innerfile refid="_web_application1_2_program_8cs">Program.cs</innerfile>
+    <innerfile refid="_startup_8cs">Startup.cs</innerfile>
+    <innerfile refid="_weather_forecast_8cs">WeatherForecast.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Ilya Petrov/source/repos/WebApplication1/WebApplication1/"/>
+  </compounddef>
+</doxygen>

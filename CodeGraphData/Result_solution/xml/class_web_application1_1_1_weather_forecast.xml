@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_web_application1_1_1_weather_forecast" kind="class" prot="public">
+    <compoundname>WebApplication1::WeatherForecast</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_web_application1_1_1_weather_forecast_1a1c46d9a1f6e7d77d67e016ac046f85b0" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>DateTime</type>
+        <definition>DateTime WebApplication1.WeatherForecast.Date</definition>
+        <argsstring></argsstring>
+        <name>Date</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Ilya Petrov/source/repos/WebApplication1/WebApplication1/WeatherForecast.cs" line="7" column="1" bodyfile="C:/Users/Ilya Petrov/source/repos/WebApplication1/WebApplication1/WeatherForecast.cs" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_web_application1_1_1_weather_forecast_1ac7eb3bea0f90967dd2f705c622100d07" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>int</type>
+        <definition>int WebApplication1.WeatherForecast.TemperatureC</definition>
+        <argsstring></argsstring>
+        <name>TemperatureC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Ilya Petrov/source/repos/WebApplication1/WebApplication1/WeatherForecast.cs" line="9" column="1" bodyfile="C:/Users/Ilya Petrov/source/repos/WebApplication1/WebApplication1/WeatherForecast.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_web_application1_1_1_weather_forecast_1ac414682d330e7ab6fe8348adfdbdc091" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string WebApplication1.WeatherForecast.Summary</definition>
+        <argsstring></argsstring>
+        <name>Summary</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Ilya Petrov/source/repos/WebApplication1/WebApplication1/WeatherForecast.cs" line="13" column="1" bodyfile="C:/Users/Ilya Petrov/source/repos/WebApplication1/WebApplication1/WeatherForecast.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_web_application1_1_1_weather_forecast_1ae5c25341175d4b8f27d577df97cf4bfd" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int WebApplication1.WeatherForecast.TemperatureFd</definition>
+        <argsstring></argsstring>
+        <name>TemperatureFd</name>
+        <initializer>=&gt; 32 + (int)(<ref refid="class_web_application1_1_1_weather_forecast_1ac7eb3bea0f90967dd2f705c622100d07" kindref="member">TemperatureC</ref> / 0.5556)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Ilya Petrov/source/repos/WebApplication1/WebApplication1/WeatherForecast.cs" line="11" column="1" bodyfile="C:/Users/Ilya Petrov/source/repos/WebApplication1/WebApplication1/WeatherForecast.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Ilya Petrov/source/repos/WebApplication1/WebApplication1/WeatherForecast.cs" line="6" column="1" bodyfile="C:/Users/Ilya Petrov/source/repos/WebApplication1/WebApplication1/WeatherForecast.cs" bodystart="5" bodyend="14"/>
+    <listofallmembers>
+      <member refid="class_web_application1_1_1_weather_forecast_1a1c46d9a1f6e7d77d67e016ac046f85b0" prot="public" virt="non-virtual"><scope>WebApplication1::WeatherForecast</scope><name>Date</name></member>
+      <member refid="class_web_application1_1_1_weather_forecast_1ac414682d330e7ab6fe8348adfdbdc091" prot="public" virt="non-virtual"><scope>WebApplication1::WeatherForecast</scope><name>Summary</name></member>
+      <member refid="class_web_application1_1_1_weather_forecast_1ac7eb3bea0f90967dd2f705c622100d07" prot="public" virt="non-virtual"><scope>WebApplication1::WeatherForecast</scope><name>TemperatureC</name></member>
+      <member refid="class_web_application1_1_1_weather_forecast_1ae5c25341175d4b8f27d577df97cf4bfd" prot="public" virt="non-virtual"><scope>WebApplication1::WeatherForecast</scope><name>TemperatureFd</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

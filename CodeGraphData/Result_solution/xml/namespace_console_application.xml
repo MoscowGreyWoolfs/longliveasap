@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="namespace_console_application" kind="namespace">
+    <compoundname>ConsoleApplication</compoundname>
+    <innerclass refid="class_console_application_1_1_account" prot="public">ConsoleApplication::Account</innerclass>
+    <innerclass refid="interface_console_application_1_1_i_facebook_client" prot="public">ConsoleApplication::IFacebookClient</innerclass>
+    <innerclass refid="class_console_application_1_1_facebook_client" prot="public">ConsoleApplication::FacebookClient</innerclass>
+    <innerclass refid="interface_console_application_1_1_i_facebook_service" prot="public">ConsoleApplication::IFacebookService</innerclass>
+    <innerclass refid="class_console_application_1_1_facebook_service" prot="public">ConsoleApplication::FacebookService</innerclass>
+    <innerclass refid="class_console_application_1_1_facebook_settings" prot="public">ConsoleApplication::FacebookSettings</innerclass>
+    <innerclass refid="class_console_application_1_1_program" prot="public">ConsoleApplication::Program</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Ilya Petrov/source/repos/WebApplication1/ConsoleApp1/Account.cs" line="2" column="1"/>
+  </compounddef>
+</doxygen>

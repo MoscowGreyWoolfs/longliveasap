@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+
 export class Counter extends Component {
   static displayName = Counter.name;
 
@@ -15,6 +16,7 @@ export class Counter extends Component {
     });
   }
 
+
   render() {
     return (
       <div>
@@ -29,5 +31,7 @@ export class Counter extends Component {
         <button className="btn btn-primary" onClick={this.incrementCounter}>Increment</button>
       </div>
     );
-  }
+    }
+
+
 }

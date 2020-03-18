@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_console_application_1_1_program" kind="class" prot="public">
+    <compoundname>ConsoleApplication::Program</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_console_application_1_1_program_1a1f8aa8563ae3d74645f21291e6db0673" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ConsoleApplication.Program.Main</definition>
+        <argsstring>(string[] args)</argsstring>
+        <name>Main</name>
+        <param>
+          <type>string[]</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Ilya Petrov/source/repos/WebApplication1/ConsoleApp1/Program.cs" line="8" column="1" bodyfile="C:/Users/Ilya Petrov/source/repos/WebApplication1/ConsoleApp1/Program.cs" bodystart="8" bodyend="20"/>
+        <references refid="class_console_application_1_1_facebook_settings_1ae62e0b93875af251a5fa917ca4b56fdf" compoundref="_facebook_settings_8cs" startline="5">ConsoleApplication.FacebookSettings.AccessToken</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Ilya Petrov/source/repos/WebApplication1/ConsoleApp1/Program.cs" line="7" column="1" bodyfile="C:/Users/Ilya Petrov/source/repos/WebApplication1/ConsoleApp1/Program.cs" bodystart="6" bodyend="21"/>
+    <listofallmembers>
+      <member refid="class_console_application_1_1_program_1a1f8aa8563ae3d74645f21291e6db0673" prot="public" virt="non-virtual"><scope>ConsoleApplication::Program</scope><name>Main</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
