@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_web_application1_1_1_controllers_1_1_weather_forecast_controller" kind="class" prot="public">
+    <compoundname>WebApplication1::Controllers::WeatherForecastController</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ControllerBase</basecompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_web_application1_1_1_controllers_1_1_weather_forecast_controller_1afc2a9e5e3a30cd7888ac633dd38c9d7b" prot="private" static="yes" mutable="no">
+        <type>readonly string[]</type>
+        <definition>readonly string [] WebApplication1.Controllers.WeatherForecastController.Summaries</definition>
+        <argsstring></argsstring>
+        <name>Summaries</name>
+        <initializer>= new[]
+        {
+            &quot;Freezing&quot;, &quot;Bracing&quot;, &quot;Chilly&quot;, &quot;Cool&quot;, &quot;Mild&quot;, &quot;Warm&quot;, &quot;Balmy&quot;, &quot;Hot&quot;, &quot;Sweltering&quot;, &quot;Scorching&quot;
+        }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Ilya Petrov/source/repos/WebApplication1/WebApplication1/Controllers/WeatherForecastController.cs" line="15" column="1" bodyfile="C:/Users/Ilya Petrov/source/repos/WebApplication1/WebApplication1/Controllers/WeatherForecastController.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_web_application1_1_1_controllers_1_1_weather_forecast_controller_1a0b808b5cc00290e32d787b950eecd582" prot="private" static="yes" mutable="no">
+        <type>readonly string[]</type>
+        <definition>readonly string [] WebApplication1.Controllers.WeatherForecastController.Names</definition>
+        <argsstring></argsstring>
+        <name>Names</name>
+        <initializer>= new[]
+       {
+            &quot;Пеття&quot;, &quot;Вася&quot;, &quot;Коля&quot;, &quot;A$AP&quot;
+        }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Ilya Petrov/source/repos/WebApplication1/WebApplication1/Controllers/WeatherForecastController.cs" line="19" column="1" bodyfile="C:/Users/Ilya Petrov/source/repos/WebApplication1/WebApplication1/Controllers/WeatherForecastController.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_web_application1_1_1_controllers_1_1_weather_forecast_controller_1a510abde305e33ee6bf8799a4b6b995df" prot="private" static="no" mutable="no">
+        <type>readonly ILogger&lt; <ref refid="class_web_application1_1_1_controllers_1_1_weather_forecast_controller" kindref="compound">WeatherForecastController</ref> &gt;</type>
+        <definition>readonly ILogger&lt;WeatherForecastController&gt; WebApplication1.Controllers.WeatherForecastController._logger</definition>
+        <argsstring></argsstring>
+        <name>_logger</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Ilya Petrov/source/repos/WebApplication1/WebApplication1/Controllers/WeatherForecastController.cs" line="24" column="1" bodyfile="C:/Users/Ilya Petrov/source/repos/WebApplication1/WebApplication1/Controllers/WeatherForecastController.cs" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_web_application1_1_1_controllers_1_1_weather_forecast_controller_1a87738d63f8c2e7c6877943365bb6a2cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>WebApplication1.Controllers.WeatherForecastController.WeatherForecastController</definition>
+        <argsstring>(ILogger&lt; WeatherForecastController &gt; logger)</argsstring>
+        <name>WeatherForecastController</name>
+        <param>
+          <type>ILogger&lt; <ref refid="class_web_application1_1_1_controllers_1_1_weather_forecast_controller" kindref="compound">WeatherForecastController</ref> &gt;</type>
+          <declname>logger</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Ilya Petrov/source/repos/WebApplication1/WebApplication1/Controllers/WeatherForecastController.cs" line="26" column="1" bodyfile="C:/Users/Ilya Petrov/source/repos/WebApplication1/WebApplication1/Controllers/WeatherForecastController.cs" bodystart="26" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_web_application1_1_1_controllers_1_1_weather_forecast_controller_1a8166cd28425a689151af06a247cc849a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerable&lt; <ref refid="class_web_application1_1_1_models_1_1_model1" kindref="compound">Model1</ref> &gt;</type>
+        <definition>IEnumerable&lt;Model1&gt; WebApplication1.Controllers.WeatherForecastController.Test</definition>
+        <argsstring>()</argsstring>
+        <name>Test</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Ilya Petrov/source/repos/WebApplication1/WebApplication1/Controllers/WeatherForecastController.cs" line="33" column="1" bodyfile="C:/Users/Ilya Petrov/source/repos/WebApplication1/WebApplication1/Controllers/WeatherForecastController.cs" bodystart="33" bodyend="48"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="38">
+        <label>ControllerBase</label>
+      </node>
+      <node id="37">
+        <label>WebApplication1.Controllers.WeatherForecastController</label>
+        <link refid="class_web_application1_1_1_controllers_1_1_weather_forecast_controller"/>
+        <childnode refid="38" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="40">
+        <label>ControllerBase</label>
+      </node>
+      <node id="39">
+        <label>WebApplication1.Controllers.WeatherForecastController</label>
+        <link refid="class_web_application1_1_1_controllers_1_1_weather_forecast_controller"/>
+        <childnode refid="40" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Ilya Petrov/source/repos/WebApplication1/WebApplication1/Controllers/WeatherForecastController.cs" line="14" column="1" bodyfile="C:/Users/Ilya Petrov/source/repos/WebApplication1/WebApplication1/Controllers/WeatherForecastController.cs" bodystart="13" bodyend="55"/>
+    <listofallmembers>
+      <member refid="class_web_application1_1_1_controllers_1_1_weather_forecast_controller_1a510abde305e33ee6bf8799a4b6b995df" prot="private" virt="non-virtual"><scope>WebApplication1::Controllers::WeatherForecastController</scope><name>_logger</name></member>
+      <member refid="class_web_application1_1_1_controllers_1_1_weather_forecast_controller_1a0b808b5cc00290e32d787b950eecd582" prot="private" virt="non-virtual"><scope>WebApplication1::Controllers::WeatherForecastController</scope><name>Names</name></member>
+      <member refid="class_web_application1_1_1_controllers_1_1_weather_forecast_controller_1afc2a9e5e3a30cd7888ac633dd38c9d7b" prot="private" virt="non-virtual"><scope>WebApplication1::Controllers::WeatherForecastController</scope><name>Summaries</name></member>
+      <member refid="class_web_application1_1_1_controllers_1_1_weather_forecast_controller_1a8166cd28425a689151af06a247cc849a" prot="public" virt="non-virtual"><scope>WebApplication1::Controllers::WeatherForecastController</scope><name>Test</name></member>
+      <member refid="class_web_application1_1_1_controllers_1_1_weather_forecast_controller_1a87738d63f8c2e7c6877943365bb6a2cf" prot="public" virt="non-virtual"><scope>WebApplication1::Controllers::WeatherForecastController</scope><name>WeatherForecastController</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -26,7 +26,7 @@ export class FetchData extends Component {
         newDiv.innerHTML = "<h1>Привет!</h1>";
 
         return (
-           
+      
           <table className='table table-striped' aria-labelledby="tabelLabel">
             <thead>
               <tr>
@@ -55,45 +55,8 @@ export class FetchData extends Component {
 
     static createDiv(forecasts) {
 
-        //var newDiv = document.createElement("div");
-        //newDiv.innerHTML = "<h1>Привет!</h1>";
-
-
-     //   var t = React.createElement('div', null, `${forecasts[0].v1} , 33`);
-
         var t = React.createElement('div', null, null);
-       
-        //    t.append('svg:svg')
-
-        //var xdata = [5, 10, 15, 20],
-        //    ydata = [3, 17, 4, 70];
-
-        ////var xdata = this.state.forecasts[0].v1;
-        ////var ydata = this.state.forecasts[0].v1;
-
-        //// size and margins for the chart
-        //var margin = { top: 20, right: 15, bottom: 60, left: 60 }
-        //    , width = 960 - margin.left - margin.right
-        //    , height = 500 - margin.top - margin.bottom;
-
-        //// x and y scales, I've used linear here but there are other options
-        //// the scales translate data values to pixel values for you
-        //var x = d3.scaleLinear()
-        //    .domain([0, d3.max(xdata)])  // the range of the values to plot
-        //    .range([0, width]);        // the pixel range of the x-axis
-
-        //var y = d3.scaleLinear()
-        //    .domain([0, d3.max(ydata)])
-        //    .range([height, 0]);
-
-        //// the chart object, includes all margins
-        //var chart = d3.select(t)
-        //    .append('svg:svg')
-        //    .attr('width', width + margin.right + margin.left)
-        //    .attr('height', height + margin.top + margin.bottom)
-        //    .attr('class', 'chart')
-
-
+     
         return (
             t
         );
@@ -108,14 +71,10 @@ export class FetchData extends Component {
     }
 
 
-     populateWeatherData3() {
+    populateWeatherData3() {
 
-        // data that you want to plot, I've used separate arrays for x and y values
-        //var xdata = [5, 10, 15, 20],
-        //    ydata = [3, 17, 4, 70];
 
-        var xdata1 = this.state.forecasts[0].v1;
-        //var ydata = this.state.forecasts[0].v1;
+         var xdata1 = this.state.forecasts[0].v1;
          let xdata = this.state.forecasts.map(({ v1 }) => v1)
          let ydata = this.state.forecasts.map(({ v2 }) => v2)
          console.log(xdata);
@@ -162,18 +121,17 @@ export class FetchData extends Component {
 
     }
 
-
-    //forecast =>
-  render() {
-    let contents = this.state.loading
-      ? <p><em>Loading...</em></p>
-          : FetchData.renderForecastsTable(this.state.forecasts);
+    render() {
+        let contents = this.state.loading
+            ? <p><em>Loading...</em></p>
+            : FetchData.renderForecastsTable(this.state.forecasts);
 
 
-      let contents2 = this.state.loading
-          ? <p><em>Loading...</em></p>
-          : FetchData.createDiv(this.state.forecasts);
 
+        let contents2 = this.state.loading
+                ? <p><em>Loading...</em></p>
+                : FetchData.createDiv(this.state.forecasts);
+    
     //  this.populateWeatherData3(forecasts);
 
 
@@ -190,34 +148,17 @@ export class FetchData extends Component {
       
       </div>
     );
-  }
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  async populateWeatherData() {
-      const response = await fetch('tester');
-  //    const response = await fetch('weatherforecast');
+    async populateWeatherData() {
+      //const response = await fetch('tester');
+      const response = await fetch('weatherforecast');
     const data = await response.json();
     this.setState({ forecasts: data, loading: false });
     }
 
     async populateWeatherData2() {
 
-        // data that you want to plot, I've used separate arrays for x and y values
-        //var xdata = [5, 10, 15, 20],
-        //    ydata = [3, 17, 4, 70];
 
         var xdata = this.state.forecasts[0].v1;
         var ydata = this.state.forecasts[0].v1;

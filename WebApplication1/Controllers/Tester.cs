@@ -6,16 +6,13 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using WebApplication1.Models;
 
+
 namespace WebApplication1.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class Tester : ControllerBase
+    public class DataTable : ControllerBase
     {
-        private static readonly string[] Summaries = new[]
-        {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-        };
 
 
         private static readonly string[] Names = new[]
@@ -23,57 +20,61 @@ namespace WebApplication1.Controllers
             "Пеття", "Вася", "Коля", "A$AP"
         };
 
+        private static readonly string[] Gender = new[]
+        {
+            "male" , "female"
+        };
+       
+        public static double SampleGaussian(Random random, double mean, double stddev)
+        {
+            // The method requires sampling from a uniform random of (0,1]
+            // but Random.NextDouble() returns a sample of [0,1).
+            double x1 = 1 - random.NextDouble();
+            double x2 = 1 - random.NextDouble();
+
+            double y1 = Math.Sqrt(-2.0 * Math.Log(x1)) * Math.Cos(2.0 * Math.PI * x2);
+            double y2 = y1* stddev +mean;
+            if (y2 < 0)
+            {
+                y2 = -y2;
+            }
+            return y2;
+        }
 
 
 
-        private readonly ILogger<Tester> _logger;
+        private readonly ILogger<DataTable> _logger;
 
-        public Tester(ILogger<Tester> logger)
+        public DataTable(ILogger<DataTable> logger)
         {
             _logger = logger;
         }
 
-      //  [HttpGet]
-      ////  [Route("test1")]
-      //  public IEnumerable<WeatherForecast> Get()
-      //  {
-      //      var rng = new Random();
-      //      return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-      //      {
-      //          Date = DateTime.Now.AddDays(index),
-      //          TemperatureC = rng.Next(-20, 55),
-      //          Summary = Summaries[rng.Next(Summaries.Length)]
-      //      })
-      //      .ToArray();
-      //  }
+        
 
 
 
         [HttpGet]
-    //    [Route("test2")]
+        //[Route("test2")]
         public IEnumerable<Model1> Test()
         {
 
+            //return new List<Model1>() { model1, model2, new Model1() { id = 5, gender = "male" } };
 
             var rng = new Random();
 
-            return Enumerable.Range(1, 500).Select(index => new Model1
+
+            return Enumerable.Range(1, 40).Select(index => new Model1
             {
-
-                id = rng.Next(-20, 55),
-                v1 = rng.Next(0, 100),
-                v2 = rng.Next(0, 300),
-                name = Names[rng.Next(Names.Length)]
+                id = index,
+                name = Names[rng.Next(Names.Length)],
+                gender = Gender[rng.Next(Gender.Length)],
+                age = (int)SampleGaussian(rng, 33, 3),
+                posts = (int)SampleGaussian(rng, 20, 6),
+                comments = (int)SampleGaussian(rng, 100, 30)
             })
-           .ToArray();
+           .ToList();
 
-            //return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-            //{
-            //    Date = DateTime.Now.AddDays(index),
-            //    TemperatureC = rng.Next(-20, 55),
-            //    Summary = Summaries[rng.Next(Summaries.Length)]
-            //})
-            //.ToArray();
 
         }
 

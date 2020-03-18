@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_web_application1_1_1_controllers_1_1_data_table" kind="class" prot="public">
+    <compoundname>WebApplication1::Controllers::DataTable</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ControllerBase</basecompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_web_application1_1_1_controllers_1_1_data_table_1afc438fb3e52ab7299c4b9fb6e4994266" prot="private" static="yes" mutable="no">
+        <type>readonly string[]</type>
+        <definition>readonly string [] WebApplication1.Controllers.DataTable.Names</definition>
+        <argsstring></argsstring>
+        <name>Names</name>
+        <initializer>= new[]
+       {
+            &quot;Пеття&quot;, &quot;Вася&quot;, &quot;Коля&quot;, &quot;A$AP&quot;
+        }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Ilya Petrov/source/repos/WebApplication1/WebApplication1/Controllers/Tester.cs" line="18" column="1" bodyfile="C:/Users/Ilya Petrov/source/repos/WebApplication1/WebApplication1/Controllers/Tester.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_web_application1_1_1_controllers_1_1_data_table_1a883f84a203da26ce89abfe3547191a42" prot="private" static="yes" mutable="no">
+        <type>readonly string[]</type>
+        <definition>readonly string [] WebApplication1.Controllers.DataTable.Gender</definition>
+        <argsstring></argsstring>
+        <name>Gender</name>
+        <initializer>= new[]
+        {
+            &quot;male&quot; , &quot;female&quot;
+        }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Ilya Petrov/source/repos/WebApplication1/WebApplication1/Controllers/Tester.cs" line="23" column="1" bodyfile="C:/Users/Ilya Petrov/source/repos/WebApplication1/WebApplication1/Controllers/Tester.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_web_application1_1_1_controllers_1_1_data_table_1a4561cf0358f8e8b5b8d1a7e521426bfe" prot="private" static="no" mutable="no">
+        <type>readonly ILogger&lt; <ref refid="class_web_application1_1_1_controllers_1_1_data_table" kindref="compound">DataTable</ref> &gt;</type>
+        <definition>readonly ILogger&lt;DataTable&gt; WebApplication1.Controllers.DataTable._logger</definition>
+        <argsstring></argsstring>
+        <name>_logger</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Ilya Petrov/source/repos/WebApplication1/WebApplication1/Controllers/Tester.cs" line="46" column="1" bodyfile="C:/Users/Ilya Petrov/source/repos/WebApplication1/WebApplication1/Controllers/Tester.cs" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_web_application1_1_1_controllers_1_1_data_table_1abdaa4c8533d85eff9e8eb6724f3d32c1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>static double WebApplication1.Controllers.DataTable.SampleGaussian</definition>
+        <argsstring>(Random random, double mean, double stddev)</argsstring>
+        <name>SampleGaussian</name>
+        <param>
+          <type>Random</type>
+          <declname>random</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mean</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>stddev</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Ilya Petrov/source/repos/WebApplication1/WebApplication1/Controllers/Tester.cs" line="28" column="1" bodyfile="C:/Users/Ilya Petrov/source/repos/WebApplication1/WebApplication1/Controllers/Tester.cs" bodystart="28" bodyend="42"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_web_application1_1_1_controllers_1_1_data_table_1a77229e5f90a1c9e3355da6e1a92eb7a0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>WebApplication1.Controllers.DataTable.DataTable</definition>
+        <argsstring>(ILogger&lt; DataTable &gt; logger)</argsstring>
+        <name>DataTable</name>
+        <param>
+          <type>ILogger&lt; <ref refid="class_web_application1_1_1_controllers_1_1_data_table" kindref="compound">DataTable</ref> &gt;</type>
+          <declname>logger</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Ilya Petrov/source/repos/WebApplication1/WebApplication1/Controllers/Tester.cs" line="48" column="1" bodyfile="C:/Users/Ilya Petrov/source/repos/WebApplication1/WebApplication1/Controllers/Tester.cs" bodystart="48" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="class_web_application1_1_1_controllers_1_1_data_table_1a3145b3e24d6ac98c06dc38617fb2a091" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerable&lt; <ref refid="class_web_application1_1_1_models_1_1_model1" kindref="compound">Model1</ref> &gt;</type>
+        <definition>IEnumerable&lt;Model1&gt; WebApplication1.Controllers.DataTable.Test</definition>
+        <argsstring>()</argsstring>
+        <name>Test</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Ilya Petrov/source/repos/WebApplication1/WebApplication1/Controllers/Tester.cs" line="59" column="1" bodyfile="C:/Users/Ilya Petrov/source/repos/WebApplication1/WebApplication1/Controllers/Tester.cs" bodystart="59" bodyend="79"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>ControllerBase</label>
+      </node>
+      <node id="2">
+        <label>WebApplication1.Controllers.DataTable</label>
+        <link refid="class_web_application1_1_1_controllers_1_1_data_table"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>ControllerBase</label>
+      </node>
+      <node id="4">
+        <label>WebApplication1.Controllers.DataTable</label>
+        <link refid="class_web_application1_1_1_controllers_1_1_data_table"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Ilya Petrov/source/repos/WebApplication1/WebApplication1/Controllers/Tester.cs" line="15" column="1" bodyfile="C:/Users/Ilya Petrov/source/repos/WebApplication1/WebApplication1/Controllers/Tester.cs" bodystart="14" bodyend="82"/>
+    <listofallmembers>
+      <member refid="class_web_application1_1_1_controllers_1_1_data_table_1a4561cf0358f8e8b5b8d1a7e521426bfe" prot="private" virt="non-virtual"><scope>WebApplication1::Controllers::DataTable</scope><name>_logger</name></member>
+      <member refid="class_web_application1_1_1_controllers_1_1_data_table_1a77229e5f90a1c9e3355da6e1a92eb7a0" prot="public" virt="non-virtual"><scope>WebApplication1::Controllers::DataTable</scope><name>DataTable</name></member>
+      <member refid="class_web_application1_1_1_controllers_1_1_data_table_1a883f84a203da26ce89abfe3547191a42" prot="private" virt="non-virtual"><scope>WebApplication1::Controllers::DataTable</scope><name>Gender</name></member>
+      <member refid="class_web_application1_1_1_controllers_1_1_data_table_1afc438fb3e52ab7299c4b9fb6e4994266" prot="private" virt="non-virtual"><scope>WebApplication1::Controllers::DataTable</scope><name>Names</name></member>
+      <member refid="class_web_application1_1_1_controllers_1_1_data_table_1abdaa4c8533d85eff9e8eb6724f3d32c1" prot="public" virt="non-virtual"><scope>WebApplication1::Controllers::DataTable</scope><name>SampleGaussian</name></member>
+      <member refid="class_web_application1_1_1_controllers_1_1_data_table_1a3145b3e24d6ac98c06dc38617fb2a091" prot="public" virt="non-virtual"><scope>WebApplication1::Controllers::DataTable</scope><name>Test</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

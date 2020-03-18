@@ -16,6 +16,10 @@ namespace WebApplication1.Controllers
         {
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
         };
+        private static readonly string[] Names = new[]
+       {
+            "Пеття", "Вася", "Коля", "A$AP"
+        };
 
         private readonly ILogger<WeatherForecastController> _logger;
 
@@ -25,33 +29,28 @@ namespace WebApplication1.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<WeatherForecast> Get()
+        //    [Route("test2")]
+        public IEnumerable<Model1> Test()
         {
+
+
             var rng = new Random();
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
+
+            return Enumerable.Range(1, 500).Select(index => new Model1
             {
-                Date = DateTime.Now.AddDays(index),
-                TemperatureC = rng.Next(-20, 55),
-                Summary = Summaries[rng.Next(Summaries.Length)]
+
+                id = rng.Next(-20, 55),
+                v1 = rng.Next(0, 100),
+                v2 = rng.Next(0, 300),
+                name = Names[rng.Next(Names.Length)]
             })
-            .ToArray();
+           .ToArray();
         }
 
 
 
-        //[HttpGet]
-        //public IEnumerable<WeatherForecast> Test()
-        //{
-        //    var rng = new Random();
-        //    return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-        //    {
-        //        Date = DateTime.Now.AddDays(index),
-        //        TemperatureC = rng.Next(-20, 55),
-        //        Summary = Summaries[rng.Next(Summaries.Length)]
-        //    })
-        //    .ToArray();
-        //}
 
 
-    }
+
+        }
 }

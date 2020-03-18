@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_1b977cbe22b27acc4e609c363ef5b1b1" kind="dir">
+    <compoundname>C:/Users/Ilya Petrov/source/repos/WebApplication1/WebApplication1/Pages</compoundname>
+    <innerfile refid="_error_8cshtml_8cs">Error.cshtml.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Ilya Petrov/source/repos/WebApplication1/WebApplication1/Pages/"/>
+  </compounddef>
+</doxygen>
