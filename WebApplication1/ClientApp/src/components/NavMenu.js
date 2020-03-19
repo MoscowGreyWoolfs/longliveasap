@@ -42,6 +42,12 @@ export class NavMenu extends Component {
                 <NavItem>
                   <NavLink tag={Link} className="text-dark" to="/data-table">DataTable</NavLink>
                 </NavItem>
+                <NavItem>
+                 <NavLink tag={Link} className="text-dark" to="/vkFriends">VKFrends</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink tag={Link} className="text-dark" to="/vkstat">VKstat</NavLink>
+                            </NavItem>
               </ul>
             </Collapse>
           </Container>

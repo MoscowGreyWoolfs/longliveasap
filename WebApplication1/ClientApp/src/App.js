@@ -7,6 +7,8 @@ import { DataTable } from './components/Table';
 import { Counter } from './components/Counter';
 
 import './custom.css'
+import { VKFriends } from './components/VKFriends';
+import { VKstat } from './components/VKstat';
 
 export default class App extends Component {
   static displayName = App.name;
@@ -17,7 +19,9 @@ export default class App extends Component {
         <Route exact path='/' component={Home} />
         <Route path='/counter' component={Counter} />
         <Route path='/fetch-data' component={FetchData} />
-        <Route path='/data-table' component={DataTable} />
+            <Route path='/data-table' component={DataTable} />
+            <Route path='/vkfriends' component={VKFriends} />
+            <Route path='/vkstat' component={VKstat} />
       </Layout>
     );
   }

@@ -4,7 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Newtonsoft.Json;
 using WebApplication1.Models;
+using System.IO;
 
 
 namespace WebApplication1.Controllers
@@ -41,7 +43,7 @@ namespace WebApplication1.Controllers
             return y2;
         }
 
-
+        
 
         private readonly ILogger<DataTable> _logger;
 
@@ -50,7 +52,21 @@ namespace WebApplication1.Controllers
             _logger = logger;
         }
 
-        
+        public void Tester()
+        {
+
+
+
+            FrendInfo d1 = new FrendInfo();
+
+
+
+            
+            System.IO.File.WriteAllText(@"E:\newPoc.json", JsonConvert.SerializeObject(d1, Formatting.Indented));
+            d1 = JsonConvert.DeserializeObject<FrendInfo>(System.IO.File.ReadAllText(@"C:\Users\Ilya Petrov\Desktop\friends (2).json"));
+
+
+        }
 
 
 
@@ -62,7 +78,7 @@ namespace WebApplication1.Controllers
             //return new List<Model1>() { model1, model2, new Model1() { id = 5, gender = "male" } };
 
             var rng = new Random();
-
+            Tester();
 
             return Enumerable.Range(1, 40).Select(index => new Model1
             {

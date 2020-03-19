@@ -20,7 +20,7 @@ namespace WebApplication1.Models
 
             public string domain { get; set; }
 
-            public CityInfo city { get; set; }
+        public CityInfo city { get; set; } = new CityInfo() { id=7, title=""};
 
             public string track_code { get; set; }
   
@@ -29,9 +29,9 @@ namespace WebApplication1.Models
     public class CityInfo
     {
 
-        public int id { get; set; }
+        public int id { get; set; } 
 
-        public string title { get; set; }
+        public string title { get; set; } 
 
     }
 
