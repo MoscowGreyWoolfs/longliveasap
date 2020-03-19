@@ -10,25 +10,29 @@ using System.IO;
 
 namespace WebApplication1.Controllers
 {
+
+
     [ApiController]
-    [Route("[controller]")]
-   
-    public class VKController : Controller
+    [Route("[controller]")] 
+    public class VkController : Controller
     {   
+
         [HttpGet]
-        public List<FrendInfo> Tester()
+        public List<FrendInfo> Tester() 
         {
-            response d1 = new response();
+            var friendsRaw = System.IO.File
+                .ReadAllText(Environment.CurrentDirectory + @"\AppLocal\friends.json");
 
-            var t = System.IO.File.ReadAllText(@"C:\Users\Ilya Petrov\Desktop\tf4.json");
-
-            var tt = JsonConvert.DeserializeObject<response>(t);
-
-            d1 = JsonConvert.DeserializeObject<response>(System.IO.File.ReadAllText(@"C:\Users\Ilya Petrov\Desktop\friends (2).json"));
-            System.IO.File.WriteAllText(@"E:\newPoc.json", JsonConvert.SerializeObject(d1.items, Formatting.Indented));
-            return tt.items;
+            return JsonConvert
+                    .DeserializeObject<Response>(friendsRaw)
+                    .items;
         }
-    }
+
+
+
+
+
+}
 }
 
 

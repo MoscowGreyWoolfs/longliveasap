@@ -13,6 +13,8 @@ namespace WebApplication1
     {
         public static void Main(string[] args)
         {
+            Console.WriteLine(AppDomain.CurrentDomain.BaseDirectory);
+            Console.WriteLine(Environment.CurrentDirectory+@"\AppLocal\friends.json");
             CreateHostBuilder(args).Build().Run();
         }
 

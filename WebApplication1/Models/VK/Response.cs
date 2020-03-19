@@ -5,15 +5,11 @@ using System.Threading.Tasks;
 
 namespace WebApplication1.Models
 {
-    public class CityInfo2
+    public class Response
     {
-        
-            public int id { get; set; }
+        public int count;
 
-            public string title { get; set; }  
-
+        public List<FrendInfo> items;
     }
 
- 
-   
 }

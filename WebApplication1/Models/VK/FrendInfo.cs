@@ -20,27 +20,15 @@ namespace WebApplication1.Models
 
             public string domain { get; set; }
 
-        public CityInfo city { get; set; } = new CityInfo() { id=7, title=""};
+            public CityInfo city { get; set; } = new CityInfo() { id=7, title=""};
 
             public string track_code { get; set; }
   
     }
 
-    public class CityInfo
-    {
-
-        public int id { get; set; } 
-
-        public string title { get; set; } 
-
-    }
 
 
-    public class response
-    {
-        public int count;
 
-        public List<FrendInfo> items;
-    }
+
    
 }
