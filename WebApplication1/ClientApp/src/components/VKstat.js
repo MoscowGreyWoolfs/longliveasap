@@ -138,9 +138,9 @@ export class VKstat extends Component {
 
         return (
             <div>
-                <h1 id="tabelLabel" >Data</h1>
+                <h1 id="tabelLabel" >Clustured by city</h1>
                 <div ref="temperatures"></div>        
-                <button className="btn btn-primary" onClick={this.bars}>Increment</button>
+                <button className="btn btn-primary" onClick={this.bars}>Graph</button>
                 {contents}
 
             </div>

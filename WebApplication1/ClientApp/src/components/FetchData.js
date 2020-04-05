@@ -137,11 +137,10 @@ export class FetchData extends Component {
 
     return (
       <div>
-            <h1 id="tabelLabel" >Weather forecast</h1>
+            <h1 id="tabelLabel" >Test view</h1>
             <div ref="temperatures"></div>
-            <p>This component demonstrates fetching data from the server.</p>
 
-            <button className="btn btn-primary" onClick={this.populateWeatherData3}>Increment</button>
+            <button className="btn btn-primary" onClick={this.populateWeatherData3}>Graph</button>
 
             {contents}
             {contents2}
@@ -151,10 +150,9 @@ export class FetchData extends Component {
     }
 
     async populateWeatherData() {
-      //const response = await fetch('tester');
-      const response = await fetch('weatherforecast');
-    const data = await response.json();
-    this.setState({ forecasts: data, loading: false });
+        const response = await fetch('tester');
+        const data = await response.json();
+        this.setState({ forecasts: data, loading: false });
     }
 
     async populateWeatherData2() {

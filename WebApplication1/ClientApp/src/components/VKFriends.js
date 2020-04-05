@@ -55,8 +55,7 @@ export class VKFriends extends Component {
 
         return (
             <div>
-                <h1 id="tabelLabel" >Data</h1>
-                <p>This component demonstrates fetching data from the server.</p>
+                <h1 id="tabelLabel" >Freinds list</h1>
                 {contents}
 
             </div>

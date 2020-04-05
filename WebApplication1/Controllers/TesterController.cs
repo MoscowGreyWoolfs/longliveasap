@@ -10,7 +10,7 @@ namespace WebApplication1.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class WeatherForecastController : ControllerBase
+    public class TesterController : ControllerBase
     {
         private static readonly string[] Summaries = new[]
         {
@@ -21,22 +21,22 @@ namespace WebApplication1.Controllers
             "Пеття", "Вася", "Коля", "A$AP"
         };
 
-        private readonly ILogger<WeatherForecastController> _logger;
+        private readonly ILogger<TesterController> _logger;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
+        public TesterController(ILogger<TesterController> logger)
         {
             _logger = logger;
         }
 
         [HttpGet]
         //    [Route("test2")]
-        public IEnumerable<Model1> Test()
+        public IEnumerable<TestModel> Test()
         {
 
 
             var rng = new Random();
 
-            return Enumerable.Range(1, 500).Select(index => new Model1
+            return Enumerable.Range(1, 500).Select(index => new TestModel
             {
 
                 id = rng.Next(-20, 55),
