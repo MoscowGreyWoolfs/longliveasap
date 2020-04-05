@@ -63,7 +63,7 @@ namespace WebApplication1.Controllers
 
             
             System.IO.File.WriteAllText(@"E:\newPoc.json", JsonConvert.SerializeObject(d1, Formatting.Indented));
-            d1 = JsonConvert.DeserializeObject<FrendInfo>(System.IO.File.ReadAllText(@"C:\Users\Ilya Petrov\Desktop\friends (2).json"));
+            d1 = JsonConvert.DeserializeObject<FrendInfo>(System.IO.File.ReadAllText(Environment.CurrentDirectory + @"\AppLocal\friends.json"));
 
 
         }

@@ -148,7 +148,7 @@ export class VKstat extends Component {
     }
 
     async VKstat() {
-        const responseb = await fetch('vkagregator');
+        const responseb = await fetch('vkagr');
         const data = await responseb.json();
         this.setState({ items: data, loading: false });
     }
