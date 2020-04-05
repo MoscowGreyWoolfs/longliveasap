@@ -29,7 +29,6 @@ export class VKFriends extends Component {
                         <th>last_name</th>                  
                         <th>domain</th>
                         <th>city</th>
-                        <th>city</th>
                     </tr>
                 </thead>
                 <tbody>

@@ -28,7 +28,6 @@
     <Folder Include="Controllers\Sandbox\King\" />
     <Folder Include="Methods\Sandbox\IP\" />
     <Folder Include="Methods\Sandbox\King\" />
-    <Folder Include="Models\Sandbox\IP\" />
     <Folder Include="Models\Sandbox\King\" />
     <Folder Include="Models\System\" />
   </ItemGroup>
